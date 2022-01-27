@@ -111,6 +111,11 @@ a{text-decoration: none;}
         min-height: 100vh;
     }
 
+    .product-menu-item-active{
+        color: #fffb00;
+        font-family: Qmedium !important;
+    }
+
     .product-subtitle{
         font-size: 20px;
     }
@@ -118,3 +123,109 @@ a{text-decoration: none;}
     .product-title {
         font-size: 32px;
         margin :10px 0 30px 0;}
+
+    .product-menu{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+        font-size: 20px;
+    }
+    
+    .product-active{
+        color: #fffb00;
+        font-family: Qmedium !important;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        padding: 10px 0;
+    }
+
+    .product-active::before{
+        content: "";
+        width: 80%;
+        height: 4px;
+        display: block;
+        background-color: #fffb00;
+        position: absolute;
+        bottom: 0;
+        border-radius: 50px;
+    }
+
+    .product-list{display: flex;
+        flex-direction: row;
+       justify-content: center;
+       gap: 30px;
+       padding:  50px 100px;
+       flex: 1;
+       
+
+    }
+
+    .product-list > .product-item {
+        flex: 1;
+        
+        
+    }
+
+    .product-list > .product-item .thumnails img{
+        width: 100%;
+        padding-bottom: 14px;
+        
+    }
+
+    .title{
+        font-size: 22px;
+        padding-bottom: 8px;
+    }
+    
+    .chef {
+        font-size: 16px;
+        padding-bottom: 12px;
+        color: #8B8BA5;
+    }
+
+     .rating img  {
+        width: 22px;
+        height: 22px;
+    }
+
+    .product-item .thumnails img{
+        border-radius: 25% 25px 20% 30%;
+        position: relative;
+        z-index: 5;
+       
+    }
+
+    .product-item .thumnails{
+        position: relative;
+    }
+
+    .product-item .thumnails::before{
+        content: "";
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: #8B8BA5;
+        padding: 9px 7px 6px 9px;
+        z-index: 0;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 15% 10% 25% 30%;
+    }
+
+    .product-item .thumnails::after {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: #FDFAE5;
+        z-index: 1;
+        top: -9px;
+        left:-9px;
+        border-radius: 30% 5% 15% 25%;
+    }
