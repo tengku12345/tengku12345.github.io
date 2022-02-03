@@ -229,3 +229,42 @@ a{text-decoration: none;}
         left:-9px;
         border-radius: 30% 5% 15% 25%;
     }
+
+    section#testimoni{
+        margin: 155px 303px 100px 303px;
+        text-align: center;
+        position: relative;
+    }
+
+    #testimoni > img{
+        position: absolute;
+        top: -60px;
+        left: -50px;
+        z-index: -1;
+    }
+
+    #testimoni .item .quote{
+        font-size: 36px;
+        line-height: 50px;
+    }
+
+    .user-testimoni{
+        width: 283px;
+        height: 86px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    .user-testimoni > img{
+        width: 90px;
+        height: 86px;
+    }
+
+    .user-details > h3{ font-size: 22px;
+
+    }
+    
+    .user-details > p{ font-size: 16px;
+
+    }
